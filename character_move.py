@@ -65,6 +65,10 @@ def run_triangle():
     for x in range(400, 800, 10):
         y = y-10
         draw_boy(x,y)
+
+    for x in range(800, 0, -10):
+        draw_boy(x,y)
+            
     pass
 
 
