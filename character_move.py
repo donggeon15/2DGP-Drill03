@@ -6,6 +6,8 @@ open_canvas()
 grass = load_image('grass.png')
 boy = load_image('character.png')
 
+#def draw_boy
+
 def run_circle():
     print('CIRCLE')
     
@@ -23,6 +25,8 @@ def run_circle():
 
 def run_top():
     print('TOP')
+    for x range(0,800,10):
+        #draw_boy(x,650)
     pass
 
 def run_right():
