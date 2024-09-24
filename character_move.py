@@ -7,6 +7,7 @@ import math
 grass = load_image('grass.png')
 boy = load_image('character.png')
 
+
 def row_rectangle():
     print('CIRCLE')
     pass
@@ -20,5 +21,7 @@ def row_circle():
 while (True):
     row_rectangle()
     row_circle()
+    break
+
 
 #close_canvas()
