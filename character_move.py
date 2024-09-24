@@ -60,13 +60,17 @@ def run_rectangle():
     
 def run_triangle():
     print('TRIANGLE')
-    x, y = 400, 550
+    x, y = 800 / 2, 550
 
     for x in range(400, 800, 10):
         y = y-10
         draw_boy(x,y)
 
     for x in range(800, 0, -10):
+        draw_boy(x,y)
+
+    for x in range(0, 400, 10):
+        y = y + 10
         draw_boy(x,y)
             
     pass
