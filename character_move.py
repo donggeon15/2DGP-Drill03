@@ -52,12 +52,19 @@ def run_left():
 
 def run_rectangle():
     print('RECTANGLE')
-    #run_top()
-    #run_right()
-    #run_bottom()
+    run_top()
+    run_right()
+    run_bottom()
     run_left()
+    pass
     
-    
+def run_triangle():
+    print('TRIANGLE')
+    x, y = 400, 550
+
+    for x in range(400, 800, 10):
+        y = y-10
+        draw_boy(x,y)
     pass
 
 
@@ -65,7 +72,8 @@ def run_rectangle():
 
 while (True):
     #run_circle()
-    run_rectangle()
+    #run_rectangle()
+    run_triangle()
     break
 
 
