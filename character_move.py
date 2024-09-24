@@ -53,7 +53,7 @@ def run_rectangle():
 # fill here
 
 while (True):
-    run_circle()
+    #run_circle()
     run_rectangle()
     break
 
