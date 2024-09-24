@@ -79,10 +79,9 @@ def run_triangle():
 # fill here
 
 while (True):
-    #run_circle()
-    #run_rectangle()
+    run_circle()
+    run_rectangle()
     run_triangle()
-    break
 
 
 close_canvas()
