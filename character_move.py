@@ -1,22 +1,34 @@
 from pico2d import *
 import math
 
+
+
 open_canvas()
- 
 
 grass = load_image('grass.png')
-boy = load_image('character.png')
+character = load_image('character.png')
 
-def row_circle():
+def run_circle():
     print('CIRCLE')
 
-    clear.canvas_row()
-    boy.draw_now(400, 300)
-    
-    pass
+    r = 300
+    cx = 400
+    cy = 300
+
+    for degree in range(0,360,3):
+        theta = math.radians(degree)
+        x = r * math.cos(theta) + cx
+        y = r * math.sin(theta) + cy
+
+        clear.canvas_row()
+        character.draw_now(x, y)
+        delay(0.1)
 
 
-def row_rectangle():
+
+
+
+def run_rectangle():
     print('RECTANGLE')
     pass
 
@@ -24,8 +36,8 @@ def row_rectangle():
 # fill here
 
 while (True):
-    row_rectangle()
-    row_circle()
+    run_rectangle()
+    run_circle()
     break
 
 
